@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('partials/header') %>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Error</title>
+  <style>
+    /* Sticky footer layout */
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
+      background-image: url('/assets/img/about/bg-blue.svg');
+      background-size: cover;
+      background-attachment: fixed;
+    }
+
+    main {
+      flex: 1; 
+    }
+  </style>
+</head>
+<body>
+  <main class="container text-center my-5">
+    <img src="https://raw.githubusercontent.com/Unonkgw/my-images/main/404.png" 
+         alt="404 Error" 
+         class="img-fluid mb-4 error-image" style="width: 500px; margin-top: 100px;">
+
+    <h1>Oops! The page you're looking for doesn't exist.</h1>
+    <p class="return-msg">
+      Please check the URL or go back to the 
+      <a href="/" class="return-msg" style="text-decoration-line: underline; color: #007bff;">home page</a>.
+    </p>
+  </main>
+
+  <%- include('partials/footer') %>
+</body>
+</html>
